@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Cycle de l'eau - 1AC</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#eef8ff;
+  color:#17324d;
+}
+
+header{
+  background:linear-gradient(135deg,#087ea4,#20b8d6);
+  color:white;
+  text-align:center;
+  padding:40px 15px;
+}
+
+header h1{margin:0;font-size:38px}
+header p{font-size:18px}
+
+nav{
+  background:#064b63;
+  padding:12px;
+  text-align:center;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+nav a,nav button{
+  color:white;
+  background:none;
+  border:0;
+  margin:5px 10px;
+  cursor:pointer;
+  font-size:15px;
+  text-decoration:none;
+}
+
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:25px;
+}
+
+.card{
+  background:white;
+  margin:20px 0;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+h2{color:#087ea4}
+
+.etape{
+  border-left:5px solid #20b8d6;
+  padding:12px 18px;
+  margin:12px 0;
+  background:#f4fcff;
+}
+
+.schema{
+  text-align:center;
+  font-size:22px;
+  line-height:2.2;
+  padding:25px;
+  background:#e4f8ff;
+  border-radius:15px;
+}
+
+.question{
+  margin:20px 0;
+  padding:15px;
+  background:#f7fbfd;
+  border-radius:10px;
+}
+
+button{
+  background:#087ea4;
+  color:white;
+  border:0;
+  padding:11px 18px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+button:hover{background:#065c78}
+
+input[type="text"]{
+  padding:10px;
+  width:100%;
+  max-width:500px;
+  border:1px solid #aaa;
+  border-radius:7px;
+}
+
+#resultat{
+  font-size:20px;
+  font-weight:bold;
+  margin-top:20px;
+}
+
+footer{
+  text-align:center;
+  background:#064b63;
+  color:white;
+  padding:25px;
+  margin-top:30px;
+}
+
+@media print{
+  nav,button,footer{display:none!important}
+  body{background:white}
+  .card{box-shadow:none}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🌊 Le Cycle de l'eau</h1>
+  <p>Sciences physiques et chimiques – Niveau 1AC</p>
+</header>
+
+<nav>
+  <a href="#cours">Cours</a>
+  <a href="#schema">Schéma</a>
+  <a href="#exercices">Exercices</a>
+  <button onclick="window.print()">🖨️ Imprimer</button>
+</nav>
+
+<main class="container">
+
+<section id="cours" class="card">
+  <h2>📚 Le cours</h2>
+
+  <p>
+    L'eau présente sur Terre circule continuellement entre les océans,
+    l'atmosphère, les continents et les êtres vivants.
+    Cette circulation constitue <strong>le cycle de l'eau</strong>.
+  </p>
+
+  <h3>☀️ 1. L'évaporation</h3>
+  <div class="etape">
+    Sous l'action de la chaleur du Soleil, une partie de l'eau
+    des océans, des mers, des lacs et des rivières se transforme
+    en vapeur d'eau.
+  </div>
+
+  <h3>☁️ 2. La condensation</h3>
+  <div class="etape">
+    En altitude, l'air est plus froid. La vapeur d'eau se refroidit
+    et se transforme en petites gouttelettes qui forment les nuages.
+  </div>
+
+  <h3>🌧️ 3. Les précipitations</h3>
+  <div class="etape">
+    Lorsque les gouttelettes deviennent suffisamment grosses,
+    elles tombent vers la Terre sous forme de pluie, de neige ou de grêle.
+  </div>
+
+  <h3>🏞️ 4. Le ruissellement</h3>
+  <div class="etape">
+    Une partie de l'eau s'écoule à la surface du sol vers les rivières,
+    les lacs et finalement les mers et les océans.
+  </div>
+
+  <h3>🌱 5. L'infiltration</h3>
+  <div class="etape">
+    Une autre partie de l'eau pénètre dans le sol et peut alimenter
+    les nappes souterraines.
+  </div>
+</section>
+
+<section id="schema" class="card">
+  <h2>🔄 Schéma du cycle de l'eau</h2>
+
+  <div class="schema">
+    ☀️ Soleil
+    <br>↓<br>
+    💧 Évaporation
+    <br>↓<br>
+    ☁️ Condensation
+    <br>↓<br>
+    🌧️ Précipitations
+    <br>↙️ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ↘️<br>
+    🌊 Ruissellement &nbsp;&nbsp; 🌱 Infiltration
+  </div>
+</section>
+
+<section id="exercices" class="card">
+  <h2>✏️ Exercices</h2>
+
+  <div class="question">
+    <p><strong>1. Comment appelle-t-on le passage de l'eau liquide à l'état gazeux ?</strong></p>
+
+    <label>
+      <input type="radio" name="q1" value="a">
+      La condensation
+    </label><br>
+
+    <label>
+      <input type="radio" name="q1" value="b">
+      L'évaporation
+    </label><br>
+
+    <label>
+      <input type="radio" name="q1" value="c">
+      L'infiltration
+    </label>
+  </div>
+
+  <div class="question">
+    <p><strong>2. Comment se forment les nuages ?</strong></p>
+
+    <label>
+      <input type="radio" name="q2" value="a">
+      Par condensation de la vapeur d'eau
+    </label><br>
+
+    <label>
+      <input type="radio" name="q2" value="b">
+      Par infiltration
+    </label><br>
+
+    <label>
+      <input type="radio" name="q2" value="c">
+      Par ruissellement
+    </label>
+  </div>
+
+  <div class="question">
+    <p><strong>3. Cite deux formes de précipitations.</strong></p>
+    <input type="text" id="q3" placeholder="Écris ta réponse ici">
+  </div>
+
+  <div class="question">
+    <p><strong>4. Quelle énergie provoque principalement l'évaporation ?</strong></p>
+
+    <label>
+      <input type="radio" name="q4" value="a">
+      L'énergie du Soleil
+    </label><br>
+
+    <label>
+      <input type="radio" name="q4" value="b">
+      L'énergie de la Lune
+    </label><br>
+
+    <label>
+      <input type="radio" name="q4" value="c">
+      L'énergie du vent uniquement
+    </label>
+  </div>
+
+  <button onclick="corriger()">✅ Corriger mes réponses</button>
+
+  <div id="resultat"></div>
+</section>
+
+</main>
+
+<footer>
+  <p>🌊 Le Cycle de l'eau – 1AC</p>
+  <p>Site éducatif</p>
+</footer>
+
+<script>
+function corriger(){
+
+  let score=0;
+
+  const q1=document.querySelector('input[name="q1"]:checked');
+  const q2=document.querySelector('input[name="q2"]:checked');
+  const q4=document.querySelector('input[name="q4"]:checked');
+
+  if(q1 && q1.value==="b") score++;
+  if(q2 && q2.value==="a") score++;
+
+  const q3=document.getElementById("q3").value.toLowerCase();
+
+  if(
+    q3.includes("pluie") ||
+    q3.includes("neige") ||
+    q3.includes("grêle")
+  ){
+    score++;
+  }
+
+  if(q4 && q4.value==="a") score++;
+
+  document.getElementById("resultat").innerHTML=
+    "🎉 Ton score est : "+score+" / 4";
+
+  localStorage.setItem("scoreCycleEau",score);
+}
+</script>
+
+</body>
+</html>
